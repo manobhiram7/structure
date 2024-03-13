@@ -1,0 +1,18 @@
+//Write a C program that uses a structure to store information about a person's date of birth (day, month, year) and then calculates and prints out their age.
+#include <stdio.h>
+#include <time.h>
+
+
+struct DateOfBirth {
+    int day;
+    int month;
+    int bornyear;
+    int presentyear;
+    int age;
+};
+int main()
+{
+struct DateOfBirth a={16,2,2005,2024,a.age};
+a.age=a.presentyear-a.bornyear;
+printf("%d %d %d \n%d \nage is %d",a.day,a.month,a.bornyear,a.presentyear,a.age);
+}
