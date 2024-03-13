@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<string.h>
+struct song
+{
+char title[20];
+char artist[20];
+char album[20];  
+char length[20];
+};
+int main() 
+{
+struct song mysong ;
+strcpy(mysong.title, "masakali");
+strcpy(mysong.artist, "mohith chauhan");
+strcpy(mysong.album,"delhi");
+strcpy(mysong.length,"5 min" ) ;
+printf("song.title: %s\n", mysong.title);
+printf("song.artist: %s\n", mysong.artist);
+printf("song.album: %s\n", mysong.album);
+printf("song.length:%s\n",mysong.length);
+return 0;
+} 
