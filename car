@@ -1,0 +1,17 @@
+Write a C program that uses a structure to store information about a car, including its make, model, and year, and then prints out that information.
+
+#include<stdio.h>
+struct car
+{
+  char model[20];
+  int year;
+  char make[20];
+};
+int main()
+{
+ struct car mycar={"boggati",2024,"cheron"};
+  printf("the model is %s\n",mycar.model);
+  printf("the year is %d\n",mycar.year);
+  printf("the make is %s\n",mycar.make);
+  return 0;
+}
